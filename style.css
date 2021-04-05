@@ -21,13 +21,38 @@
     font-size: 60%; /* controle das medidas rem */
 }
 
-    * {
+/*
+    font-family: 'Archivo', sans-serif;
+    font-family: 'Poppins', sans-serif;
+*/
+
+* {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
     }
 
+html, body {
+    height: 100vh;
+
+}
+
 body {
     background-color: var(--color-primary);
-    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body,
+input,
+button,
+textarea {
+    font: 500 1.6rem Poppins; 
+    color: var(--color-text-base);
+}
+
+#container{
+    width: 90vw;
+    min-width: 700px;
 }
